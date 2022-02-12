@@ -1,0 +1,261 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+li, a{
+    display: inline-block;
+    color: rgb(29, 29, 29);
+    /* margin-bottom: 0px; */
+    /* letter-spacing: 1px; */
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgba(129, 85, 93, 0.63);
+}
+nav{
+    /* background-color: rgb(202, 176, 120); */
+    /* justify-content: flex-end; */
+    color: rgb(69, 97, 97);
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: +1;
+
+}
+/* .hero-banner{
+    position: relative;
+} */
+.hero-banner-img{
+    width: 100%;
+    position: relative;
+    height: 400px;
+    transform: rotate(180deg);
+}
+.hero-banner-h1{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    position: absolute;
+    font-style: bold;
+    z-index: 3;
+    top: 31%;
+    left: 33%;
+    padding: 10px;
+    transform: translate(25% , 50%);
+}
+
+/* about me section */
+.about{
+    padding: 50px;
+    margin: 0 auto;
+    width: 948px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: darkslategray;
+}
+.about p{
+    font-style: italic;
+    padding: 25px;
+}
+.about-detail{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.my-name-logo{
+
+}
+.about-detail img{
+    height: 200px;
+    vertical-align: center;
+    width: 300px;
+    border-radius: 10px;
+}
+.about-detail-left{
+    flex: 50%;
+    margin-bottom: 25px;
+}
+.about-detail-right{
+    flex: 50%;
+    padding: 25px;
+}
+/* progress bars section */
+.skills h4{
+    margin: 20px;
+}
+.progress-bar{
+    display: block;
+    height: 30px;
+    padding: 0px;
+    margin: 5px;
+    background-color: lightgray;
+}
+
+.progress-bar > .mytext{
+    padding-top: 5px;
+}
+
+.progress-bars-container h3{
+    /* float: left; */
+    text-align: left;
+    align-content: left;
+    margin-top: 5px;
+}
+.photography-progress-bar{
+    display: block;
+    padding: 0px;
+    height: 25px;
+    margin: 0px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    background-color: rgb(116, 116, 116);
+}
+.design-progress-bar{
+    display: block;
+    padding: 0px;
+    height: 25px;
+    margin: 0px;
+    width: 85%;
+    color: white;
+    background-color: rgb(116, 116, 116);
+}
+.Photoshop-progress-bar{
+    display: block;
+    padding: 0px;
+    height: 25px;
+    margin: 0px;
+    width: 75%;
+    color: white;
+    background-color: rgb(116, 116, 116);
+}
+
+/* work section */
+.project-figures{
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+    letter-spacing: 2px;
+    display: flex;
+    margin: 0;
+    padding: 25px 0;
+}
+.project-figures h3, h4{
+    padding: 5px;
+}
+/* common image container */
+.image-container img{
+    display: block;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    transform: rotate(180deg);
+}
+.image-container h1{
+    color: white;
+    position: absolute;
+    margin-top: 100px;
+    font-style: bold;
+    z-index: 3;
+    letter-spacing: 8px;
+    /* top: 31%; */
+    left: 34%;
+    padding: 10px;
+    transform: translate(50% , 50%);
+}
+/* common text container */
+.my-work-text{
+    margin: 25px;
+    text-align: center;
+    color: dimgray;
+}
+.my-work-text p{
+    font-style: italic;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+/* portfolio*/
+.portfolio-row{
+    width: 948px;
+    margin: auto;
+    align-content: center;
+}
+.portfolio-images{
+    display: flex;
+    /* width: 948px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: space-between; */
+}
+.portfolio-images img{
+    width: 200px;
+    padding: 5px;
+   height: 200px;
+   text-align: center;
+   margin: 5px;
+}
+.portfolio-button{
+    justify-content: center;
+    margin-left: 50%;
+    margin-bottom: 35px;
+    margin-top: 25px;
+    padding: 12px 24px;
+    text-align: center;
+}
+/* contact section */
+.contact-form-row{
+    width: 948px;
+    margin: auto;
+    justify-content: center;
+}
+.contact-form{
+    display: flex;
+    
+    margin: 50px;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    text-align: center;
+}
+.contact-form-image{
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+.form-ul{
+  display: block;
+}
+footer{
+    background-color: rgb(87, 79, 61);
+    /* display: grid; */
+    padding: 10px;
+    color: white;
+    /* align-content: center; */
+    /* justify-content: center; */
+    vertical-align: middle;
+    text-align: center!important;
+}
+
+/* media queries */
+@media (max-width: 800px){
+    .about-detail-left{
+        flex: 100%;
+    }
+    .about-detail-right{
+        flex: 0%;
+    }
+    .about-detail {
+        flex-direction: column;
+    }
+    .about-detail-left{
+        width: 100%;
+        max-width: 100%;
+    }
+    .about-detail-right{
+        width: 100%;
+        max-width: 100%;
+    }
+}
